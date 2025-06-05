@@ -30,7 +30,7 @@
   <main class="px-6 py-10 max-w-6xl mx-auto space-y-16">
 
     <!-- Mission & Vision -->
-    <section>
+    <section class="text-center">
       <h2 class="text-2xl font-bold text-green-800 mb-4">🌱 Our Mission</h2>
       <p>At Tayyib Crops, we grow what we feed our own kids — pure, chemical-free oyster mushrooms and seasonal produce. True to the name <strong>Tayyib</strong>, meaning “pure,” everything we offer is grown with care and shared with delight, from our family to yours.</p>
 
@@ -39,7 +39,7 @@
     </section>
 
     <!-- Core Values -->
-    <section>
+    <section class="text-center">
       <h2 class="text-2xl font-bold text-green-800 mb-6">💚 Our Core Values</h2>
       <div class="flex flex-wrap justify-center gap-6">
         <div class="bg-green-50 p-4 rounded shadow w-72">
@@ -75,7 +75,7 @@
     </section>
 
     <!-- Image Gallery with Lightbox -->
-    <section>
+    <section class="text-center">
       <h2 class="text-xl font-bold text-green-800 mb-4">📸 A Glimpse of Our Produce</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
         <a href="images/1.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/1.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
@@ -84,7 +84,6 @@
         <a href="images/4.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/4.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
         <a href="images/5.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/5.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
         <a href="images/6.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/6.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
-        <!-- 
         <a href="images/10.jpeg" data-lightbox="farm-gallery" data-title="Harvest ready mushrooms"><img src="images/10.jpeg" alt="Harvest ready mushrooms" class="rounded shadow"></a>
         <a href="images/11.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/11.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
         <a href="images/Chikoo.jpeg" data-lightbox="farm-gallery" data-title="Sapodilla tree"><img src="images/Chikoo.jpeg" alt="Sapodilla tree" class="rounded shadow"></a>
@@ -92,7 +91,6 @@
         <a href="images/MangoHarvest.jpg" data-lightbox="farm-gallery" data-title="Last year's Mango Harvest"><img src="images/MangoHarvest.jpg" alt="Mango harvest" class="rounded shadow"></a>
         <a href="images/NaturalRipeningProcess.jpg" data-lightbox="farm-gallery" data-title="Mangoes being ripened naturally"><img src="images/NaturalRipeningProcess.jpg" alt="Ripening mangoes" class="rounded shadow"></a>
         <a href="images/MangoSlices.jpg" data-lightbox="farm-gallery" data-title="Sliced Mangoes on table"><img src="images/MangoSlices.jpg" alt="Sliced mangoes" class="rounded shadow"></a>
-        -->
       </div>
     </section>
   </main>
@@ -103,13 +101,13 @@
   </footer>
 
   <!-- Lightbox2 JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       lightbox.option({
         'resizeDuration': 200,
         'wrapAround': true,
-        'alwaysShowNavOnTouchDevices': true
+        'albumLabel': "Image %1 of %2"
       });
     });
   </script>
