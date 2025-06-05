@@ -6,6 +6,20 @@
   <title>Tayyib Crops | Homegrown Mushrooms</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+  <style>
+    body::before {
+      content: "";
+      background: url('images/logo.png') no-repeat center center;
+      background-size: 300px;
+      opacity: 0.03;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
   <nav class="bg-green-100 p-4 shadow-md flex justify-center space-x-6 text-green-700">
@@ -20,7 +34,7 @@
     <p class="text-xl mt-4 text-green-700 max-w-xl mx-auto">From our garden to your table — safe, homegrown food for your family.</p>
     <div class="mt-6 flex justify-center gap-4">
       <a href="about.html" class="bg-green-600 text-white px-5 py-2 rounded-full shadow hover:bg-green-700">See Our Story</a>
-      <a href="https://wa.me/917306050329?text=Hi%2C%20I'm%20interested%20in%20ordering%20from%20Tayyib%20Crops!" target="_blank" rel="noopener noreferrer" class="bg-white text-green-700 border border-green-600 px-5 py-2 rounded-full hover:bg-green-100">Order Now</a>
+      <a href="https://wa.me/917306050329?text=Hi%2C%20I%20would%20like%20to%20order%20from%20Tayyib%20Crops" class="bg-white text-green-700 border border-green-600 px-5 py-2 rounded-full hover:bg-green-100" target="_blank">Order Now</a>
     </div>
   </header>
 
@@ -39,24 +53,23 @@
         </div>
         <div class="bg-green-50 p-4 rounded-lg shadow">
           <div class="text-4xl">🚚</div>
-          <p class="font-semibold mt-2">Local Delivery</p>
-          <p class="mt-1 text-gray-600 text-sm">
-            Free delivery within a 4km radius. For locations beyond that, delivery can be arranged via Porter on a mutually agreed basis. <br />
-            <strong>Conditions apply.</strong> Please contact us via WhatsApp at <a href="https://wa.me/917306050329" target="_blank" rel="noopener noreferrer" class="text-green-700 underline">73060 50329</a> to discuss your order and delivery options.
-          </p>
+          <p class="font-semibold mt-2">Local Delivery*</p>
         </div>
         <div class="bg-green-50 p-4 rounded-lg shadow">
           <div class="text-4xl">🏡</div>
           <p class="font-semibold mt-2">Grown at Home, For Your Home</p>
         </div>
       </div>
-    </section>
 
-    <!-- Seasonal Availability -->
-    <section class="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
-      <h2 class="text-xl font-bold text-yellow-700 mb-2">🌟 Seasonal Availability</h2>
-      <p><strong>Currently Available:</strong> Oyster mushrooms</p>
-      <p><strong>Coming Soon:</strong> Mangoes, Papayas, Jackfruit, Chikoo, Tomatoes, Custard Apple, Moringa, Ladysfinger and more!</p>
+      <!-- Delivery Note -->
+      <div class="mt-6 text-sm text-gray-600 max-w-md mx-auto text-left">
+        <p class="mb-1 font-semibold text-gray-700">* Local Delivery Conditions:</p>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Free delivery within 4 km radius.</li>
+          <li>Beyond 4 km: delivery charges apply (via Porter or similar).</li>
+          <li>Contact us on WhatsApp at <a href="https://wa.me/917306050329" target="_blank" class="text-green-700 underline">+91 73060 50329</a> to coordinate.</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Customer Quote -->
@@ -74,8 +87,8 @@
       { src: 'images/6.jpeg', caption: 'Freshly harvested oyster mushrooms' },
       { src: 'images/2.jpeg', caption: 'Freshly harvested oyster mushrooms' }
     ] }">
-      <h2 class="text-2xl font-semibold text-green-700">📷 A Peek into Our Farm</h2>
-      <p class="text-lg mb-4">Here are some moments captured from our little farm — from fresh mushrooms to fruit trees and the vibrant seasonal produce grown with love.</p>
+      <h2 class="text-2xl font-semibold text-green-700 text-center">📷 A Peek into Our Farm</h2>
+      <p class="text-lg mb-4 text-center">Here are some moments captured from our little farm — from fresh mushrooms to fruit trees and the vibrant seasonal produce grown with love.</p>
 
       <div class="relative">
         <template x-for="(img, index) in images" :key="index">
