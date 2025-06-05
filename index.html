@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tayyib Crops | Homegrown Mushrooms</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
 </head>
 <body class="bg-white text-gray-800 font-sans">
   <nav class="bg-green-100 p-4 shadow-md flex justify-center space-x-6 text-green-700">
@@ -13,27 +14,80 @@
     <a href="contact.html" class="hover:underline">Contact</a>
   </nav>
 
-  <header class="text-center p-8">
-    <h1 class="text-4xl font-bold">Tayyib Crops</h1>
-    <p class="text-lg mt-2 text-green-600">Fresh, chemical-free oyster mushrooms grown at home</p>
+  <!-- Hero CTA Section -->
+  <header class="bg-green-50 text-center py-12 px-4">
+    <h1 class="text-4xl font-bold text-green-800">Tayyib Crops</h1>
+    <p class="text-xl mt-4 text-green-700 max-w-xl mx-auto">From our garden to your table — safe, homegrown food for your family.</p>
+    <div class="mt-6 flex justify-center gap-4">
+      <a href="about.html" class="bg-green-600 text-white px-5 py-2 rounded-full shadow hover:bg-green-700">See Our Story</a>
+      <a href="#contact" class="bg-white text-green-700 border border-green-600 px-5 py-2 rounded-full hover:bg-green-100">Order Now</a>
+    </div>
   </header>
 
-  <main class="px-6 space-y-6">
-    <section>
-      <h2 class="text-2xl font-semibold">Welcome!</h2>
-      <p>We grow oyster mushrooms using a clean, eco-friendly process in a hi-tech indoor microfarm setup. Grown with care right from our home to your plate!</p>
+  <main class="px-6 space-y-16 max-w-5xl mx-auto">
+    <!-- Highlights Grid -->
+    <section class="text-center">
+      <h2 class="text-2xl font-semibold text-green-800 mb-6">Why People Love Tayyib Crops</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-green-50 p-4 rounded-lg shadow">
+          <div class="text-4xl">🧺</div>
+          <p class="font-semibold mt-2">Farm-Fresh Every Week</p>
+        </div>
+        <div class="bg-green-50 p-4 rounded-lg shadow">
+          <div class="text-4xl">🌿</div>
+          <p class="font-semibold mt-2">100% Chemical-Free</p>
+        </div>
+        <div class="bg-green-50 p-4 rounded-lg shadow">
+          <div class="text-4xl">🚚</div>
+          <p class="font-semibold mt-2">Local Delivery (Coming Soon)</p>
+        </div>
+        <div class="bg-green-50 p-4 rounded-lg shadow">
+          <div class="text-4xl">🏡</div>
+          <p class="font-semibold mt-2">Grown at Home, For Your Home</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold">Why Choose Us?</h2>
-<ul style="list-style: none; padding: 0; font-size: 1.05em;">
-    <li>✅ <strong>Proudly Grown Locally</strong></li>
-    <li>🌿 <strong>No Pesticides or Chemicals</strong></li>
-    <li>🤲 <strong>Hand-harvested with care</strong></li>
-    <li>🧺 <strong>Picked Fresh Daily</strong></li>
-    <li>🌱 <strong>Vegan & Gluten-Free</strong></li>
-    <li>♻️ <strong>Eco-Friendly Farming</strong></li>
-  </ul>
+    <!-- Seasonal Availability -->
+    <section class="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
+      <h2 class="text-xl font-bold text-yellow-700 mb-2">🌟 Seasonal Availability</h2>
+      <p><strong>Currently Available:</strong> Oyster mushrooms</p>
+      <p><strong>Coming Soon:</strong> Mangoes, Papayas, Tomatoes, Jackfruit, and more!</p>
+    </section>
+
+    <!-- Customer Quote -->
+    <section class="text-center">
+      <blockquote class="italic text-gray-700 max-w-2xl mx-auto">“We love knowing our kids are eating food that’s completely safe — and delicious!”</blockquote>
+      <p class="mt-2 text-sm text-gray-500">— A Happy Neighbor</p>
+    </section>
+
+    <!-- Image Slideshow Gallery -->
+    <section x-data="{ slide: 0, images: [
+      { src: 'images/1.jpeg', caption: 'Freshly harvested oyster mushrooms' },
+      { src: 'images/3.jpeg', caption: 'Our flourishing mango tree' },
+      { src: 'images/4.jpeg', caption: 'Naturally ripened mangoes, chemical-free' },
+      { src: 'images/5.jpeg', caption: 'Ripe mangoes ready to serve' },
+      { src: 'images/6.jpeg', caption: 'A glimpse of our papaya or sapota tree' },
+      { src: 'images/2.jpeg', caption: 'Our hi-tech indoor mushroom grow room' }
+    ] }">
+      <h2 class="text-2xl font-semibold text-green-700">📷 A Peek into Our Farm</h2>
+      <p class="text-lg mb-4">Here are some moments captured from our little farm — from fresh mushrooms to fruit trees and the vibrant seasonal produce grown with love.</p>
+
+      <div class="relative">
+        <template x-for="(img, index) in images" :key="index">
+          <div x-show="slide === index" class="transition duration-500 ease-in-out">
+            <img :src="img.src" :alt="img.caption" class="w-full h-96 object-cover rounded-lg shadow-md">
+            <p class="mt-2 text-center text-sm text-gray-600" x-text="img.caption"></p>
+          </div>
+        </template>
+
+        <div class="absolute inset-y-0 left-0 flex items-center">
+          <button @click="slide = (slide - 1 + images.length) % images.length" class="text-2xl px-2 bg-white bg-opacity-70 rounded-full shadow">&#8592;</button>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center">
+          <button @click="slide = (slide + 1) % images.length" class="text-2xl px-2 bg-white bg-opacity-70 rounded-full shadow">&#8594;</button>
+        </div>
+      </div>
     </section>
   </main>
 
