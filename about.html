@@ -4,63 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Tayyib Crops</title>
+
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navigation -->
   <nav class="bg-green-100 p-4 shadow-md flex justify-center space-x-6 text-green-700">
     <a href="index.html" class="hover:underline">Home</a>
     <a href="about.html" class="hover:underline font-semibold">About</a>
     <a href="contact.html" class="hover:underline">Contact</a>
   </nav>
 
+  <!-- Header -->
   <header class="text-center py-10 px-6 bg-green-50">
     <h1 class="text-4xl font-bold text-green-800">About Tayyib Crops</h1>
-    <p class="text-lg text-green-700 mt-4 max-w-3xl mx-auto">
-      Rooted in the values of purity, family, and mindful growing, Tayyib Crops is a small homegrown initiative that believes in clean, honest food.
-    </p>
+    <p class="text-lg text-green-700 mt-4 max-w-3xl mx-auto">Rooted in the values of purity, family, and mindful growing, Tayyib Crops is a small homegrown initiative that believes in clean, honest food.</p>
   </header>
 
-  <main class="px-6 py-10 max-w-5xl mx-auto space-y-16">
-    <!-- Mission and Vision -->
+  <main class="px-6 py-10 max-w-6xl mx-auto space-y-16">
+    
+    <!-- Mission & Vision -->
     <section>
       <h2 class="text-2xl font-bold text-green-800 mb-4">🌱 Our Mission</h2>
-      <p>
-        At Tayyib Crops, we grow what we feed our own kids — pure, chemical-free oyster mushrooms and seasonal produce. True to the name <strong>Tayyib</strong>, meaning “pure,” everything we offer is grown with care and shared with delight, from our family to yours.
-      </p>
+      <p>At Tayyib Crops, we grow what we feed our own kids — pure, chemical-free oyster mushrooms and seasonal produce. True to the name <strong>Tayyib</strong>, meaning “pure,” everything we offer is grown with care and shared with delight, from our family to yours.</p>
 
       <h2 class="text-2xl font-bold text-green-800 mt-10 mb-4">👀 Our Vision</h2>
-      <p>
-        Inspired by the meaning of <strong>Tayyib</strong> — “pure” — we aim to stay small and sincere, building a local circle that values clean, homegrown food. At Tayyib Crops, we grow with love and share with intention.
-      </p>
+      <p>Inspired by the meaning of <strong>Tayyib</strong> — “pure” — we aim to stay small and sincere, building a local circle that values clean, homegrown food. At Tayyib Crops, we grow with love and share with intention.</p>
     </section>
 
-    <!-- Our Core Values -->
+    <!-- Core Values -->
     <section>
       <h2 class="text-2xl font-bold text-green-800 mb-6">💚 Our Core Values</h2>
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Value cards... (unchanged from before) -->
-        <div class="bg-green-50 p-4 rounded shadow">
+      <div class="flex flex-wrap justify-center gap-6">
+        <div class="bg-green-50 p-4 rounded shadow w-72">
           <div class="text-3xl">🍃</div>
           <h3 class="font-semibold text-lg mt-2">Purity</h3>
           <p class="text-sm">We grow food that lives up to our name — Tayyib, meaning pure. No chemicals. No shortcuts. Just clean, honest produce we trust for our own kids.</p>
         </div>
-        <div class="bg-green-50 p-4 rounded shadow">
+
+        <div class="bg-green-50 p-4 rounded shadow w-72">
           <div class="text-3xl">👨‍👩‍👧‍👦</div>
           <h3 class="font-semibold text-lg mt-2">Family First</h3>
           <p class="text-sm">Our farm is run by family, for families. Every mushroom and fruit is grown with the same care we give to feeding our loved ones.</p>
         </div>
-        <div class="bg-green-50 p-4 rounded shadow">
+
+        <div class="bg-green-50 p-4 rounded shadow w-72">
           <div class="text-3xl">🏘️</div>
           <h3 class="font-semibold text-lg mt-2">Local & Personal</h3>
           <p class="text-sm">We don’t aim to go big. We stay close, sharing our produce only with nearby homes — keeping things fresh, direct, and personal.</p>
         </div>
-        <div class="bg-green-50 p-4 rounded shadow">
+
+        <div class="bg-green-50 p-4 rounded shadow w-72">
           <div class="text-3xl">🪴</div>
           <h3 class="font-semibold text-lg mt-2">Careful Growing</h3>
           <p class="text-sm">We believe slow, thoughtful growing beats fast farming. We hand-harvest and handle everything with care.</p>
         </div>
-        <div class="bg-green-50 p-4 rounded shadow">
+
+        <div class="bg-green-50 p-4 rounded shadow w-72">
           <div class="text-3xl">👐</div>
           <h3 class="font-semibold text-lg mt-2">Integrity Over Scale</h3>
           <p class="text-sm">We’re not a factory. We’re a family sharing what we grow. Every sale carries our name, so we keep it honest, always.</p>
@@ -72,20 +78,28 @@
     <section>
       <h2 class="text-xl font-bold text-green-800 mb-4">📸 A Glimpse of Our Produce</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <a href="images/1.jpeg" data-lightbox="gallery" data-title="Oyster mushrooms"><img src="images/1.jpeg" class="rounded shadow" alt="Oyster mushrooms"></a>
-        <a href="images/3.jpeg" data-lightbox="gallery" data-title="Mango tree"><img src="images/3.jpeg" class="rounded shadow" alt="Mango tree"></a>
-        <a href="images/4.jpeg" data-lightbox="gallery" data-title="Naturally ripened mangoes"><img src="images/4.jpeg" class="rounded shadow" alt="Naturally ripened mangoes"></a>
-        <a href="images/5.jpeg" data-lightbox="gallery" data-title="Sliced mangoes"><img src="images/5.jpeg" class="rounded shadow" alt="Sliced mangoes"></a>
-        <a href="images/6.jpeg" data-lightbox="gallery" data-title="Papaya or sapota tree"><img src="images/6.jpeg" class="rounded shadow" alt="Papaya or sapota tree"></a>
+        <a href="images/1.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/1.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
+        <a href="images/3.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/3.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
+        <a href="images/4.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/4.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
+        <a href="images/5.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/5.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
+        <a href="images/6.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/6.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
+        <a href="images/10.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/10.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
+        <a href="images/11.jpeg" data-lightbox="farm-gallery" data-title="Oyster mushrooms"><img src="images/11.jpeg" alt="Oyster mushrooms" class="rounded shadow"></a>
+        <a href="images/Chikoo.jpeg" data-lightbox="farm-gallery" data-title="Sapodilla tree"><img src="images/Chikoo.jpeg" alt="Sapodilla tree" class="rounded shadow"></a>
+        <a href="images/MangoTypes.jpeg" data-lightbox="farm-gallery" data-title="3 Varieties of Mangoes: കോട്ടൂക്കോണം, കപ്പ , പഞ്ജര "><img src="images/MangoTypes.jpeg" alt="3 Varieties of Mangoes: കോട്ടൂക്കോണം, കപ്പ , പഞ്ജര " class="rounded shadow"></a>
+        <a href="images/MangoHarvest.jpg" data-lightbox="farm-gallery" data-title="Last year's Mango Harvest"><img src="images/MangoHarvest.jpg" alt="Last year's Mango Harvest" class="rounded shadow"></a>
+        <a href="images/NaturalRipeningProcess.jpg" data-lightbox="farm-gallery" data-title="Mangoes being ripened naturally"><img src="images/NaturalRipeningProcess.jpg" alt="Mangoes being ripened naturally" class="rounded shadow"></a>
+        <a href="images/MangoSlices.jpg" data-lightbox="farm-gallery" data-title="Sliced Mangoes on table"><img src="images/MangoSlices.jpg" alt="Sliced Mangoes on table" class="rounded shadow"></a>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="bg-green-100 text-center text-sm p-4 mt-8 text-gray-600">
     &copy; 2025 Tayyib Crops. All rights reserved.
   </footer>
 
-  <!-- Lightbox JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>
